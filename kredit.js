@@ -5,10 +5,12 @@ const time = 2
 
 const sos_my = (sum,iga,time) => {
     for (let i = 1; i <= time; i++) {
-        sum = (sum * iga) + sum; // вычисляем сумму для каждого года
+        sum = (sum * iga) + sum;
       }
+
       return sum;
     };
 
 const finalSum = sos_my(sum, iga, time);
-console.log(finalSum);
+const sumplus = finalSum - sum
+console.log(`Общая сумма с процентами = ${finalSum} рублей\nПереплата = ${sumplus}`);
