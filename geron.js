@@ -1,5 +1,5 @@
 const geron = (a,b,c) => {
-    p = (a*b*c)/2;
+    const p = (a + b + c) / 2;
     return Math.sqrt(p*(p-a)*(p-b)*(p-c));
     }
-    console.log (geron (3,6,2))
+    console.log (geron (6,7,8))
